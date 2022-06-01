@@ -1,0 +1,36 @@
+lines:
+	* a line is never longer than 100 chars
+
+imports:
+	* import in alphabetic order, case-insensitive
+		import a.b;
+		import a.b.C;
+		import a.b.d;
+
+	* first system libraries (e.g. tango, derelict), then
+	  gen. stuff then defend. stuff
+
+indentation:
+	* we indent with tabs (assuming space-width 8)
+
+comments:
+	* one line comments are in form
+		// comment
+
+	* multi-line comments are in form
+		/* text
+		   text */ (for 2-line comments)
+
+		/*
+		 * text
+		 * text
+		 */ (for more-then-2-line comments)
+
+	* commented out code is in form
+		//code (no space there, for single-line code)
+
+		/+
+		code
+		code
+		code
+		+/ (for multi-line code)

@@ -1,0 +1,1 @@
+ddbg -cmd=r defend.exe

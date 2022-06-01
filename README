@@ -1,0 +1,22 @@
+In order to build the game you have to install the following software:
+	* OpenIL (at least version 1.8.6-rc2)
+	* OpenGL
+	* OpenAL (optionally)
+	* libogg (optionally)
+	* FreeType
+	* SDL
+	* dsss
+	* Tango (most recent version, e.g. svn trunk)
+	* Hybrid (see http://hybrid.team0xf.com/wiki/Main/GettingStarted)
+
+To build the game:
+	* switch to src/
+	* invoke dsss (e.g. dsss build)
+	
+Controls:
+	* scrolling: WASD or arrow keys
+	* scrolling faster: shift
+	* rotating the camera: ctrl + arrow keys
+	* zooming: page up/page down
+	* screenshot: F5 (make sure the directory run/shots/ exists)
+	* exiting the game: escape

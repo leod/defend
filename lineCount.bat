@@ -1,0 +1,2 @@
+sh lineCount.sh
+pause

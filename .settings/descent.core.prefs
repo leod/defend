@@ -1,0 +1,10 @@
+#Tue Jan 27 16:59:13 CET 2009
+descent.core.compiler.allowDeprecated=disabled
+descent.core.compiler.debugIdentifiers=
+descent.core.compiler.debugLevel=0
+descent.core.compiler.enableSemanticErrorReporting=0
+descent.core.compiler.enableWarnings=disabled
+descent.core.compiler.source=1
+descent.core.compiler.versionIdentifiers=DigitalMars, Windows, Win32, X86, LittleEndian, D_InlineAsm, D_InlineAsm_X86, all, UseSDL, Tango
+descent.core.compiler.versionLevel=0
+eclipse.preferences.version=1

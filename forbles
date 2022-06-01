@@ -1,0 +1,53 @@
+terrain decals
+serializing gamestate (will be needed for savegames, maps and maybe out-of-sync recovering)
+	what needs to be saved
+		players (PlayerManager)
+		? terrain seed/terrain filename (= TerrainInfo)
+			shouldn't the terrain data go to the same file as everything else though?
+				but that would mean that the terrain data would be duplicated in map and savegame... maybe the savegame should
+				know from which *map* it came and read the terrain from there
+		related sim types (Technology, ObjectTypeInfo) as those might have changed in gameplay (that is, serialize all used civs)
+			serializing all used object types for each player might go out of hand if i have like 100 different types
+				maybe do some diffing, in most cases only the property array changes i guess
+					i could try creating a xpose backend which takes a list of vars and compares those to their default value, serializing them if they differ
+					for now, serializing only vars which actually may change in the game should really be enough (properties and effectors for ObjectTypeInfo, available and developed for Technology)
+						this is quite restrictive, as it would for example disallow one from appending to CitizenTypeInfo.canBuild
+		all game objects
+			references to other objects and sim types will of course need to be stored as ids
+			scene nodes will need to be reconstructed
+			need to get allocated in the correct way by their respective ObjectTypeInfo
+		game settings (whether to enable fog of war etc)
+map editor
+	things i'll need to do first
+		factor out stuff like object picking from game.hud.Mouse
+		? update Terrain, Heightmap, PlayerManager etc to be able to change their state after game initialization,
+		? add public functions to GameObjectManager which do stuff immediately (ie remove some object, add some object etc)
+			or don't use PlayerManager/GameObjectManager and Gateway at all as they aren't designed to deal with such changes at game runtime
+			though it would be beneficial to use GameObjectManager for serializing the maps
+		terrain texturing shouldn't be determined only by height
+	things it'll have
+		place and remove objects, change their properties
+		add and remove players
+		change terrain height and generate random terrains
+		maybe later add some scripting, ie being able to define new object types in the editor
+automatically compute pos of the shadow cam
+fix random hangups at startup when using game.net
+make game.SinglePlayer work
+see if Phase could be internal to game.net as it doesn't really make sense with sp
+	Phase might be needed in future by GameObjectManager to eliminate duplicate orders though
+		maybe order duplication could instead be done on client-side
+remove floats from the simulation (heightmap, distance calculations in sim.Core)
+do something about the property array of game objects/-types in sim.Core, having it be a static array sucks and maybe more types apart from fixed should be allowed
+	while i'm at it i could change the key of the array from int (enum) to char[], which would make it work better with scripting langs for example
+many things in engine suck (image, sound, input, ...), either unsuck them or use xf stuff
+some kind of weak pointer for the game objects which automatically gets nulled on target's removal would be cool
+algorithm for generating (and reusing...) object IDs
+find out why MD2 animation still is that slow (i suspect it's the vertex buffer updating)
+add lotsa MiniD scripting (in sim mainly)
+	rewrite MDExpose first (should be a lot simpler now that MiniD has abstract class stuff itself)
+group pathfinding
+	starting by something simple like determining a sort of leader in the group and finding the path only for him. the other units will first go to the leader's
+	position and from there use the the leader's path
+group formations
+display some nice message to the user when there is an order error
+TSM/PSM
