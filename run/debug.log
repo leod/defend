@@ -1,0 +1,154 @@
+2009-08-19 00:55:42,953:  Info main - Defend 0.0.0 (built Apr 30 2009)
+2009-08-19 00:55:42,968:  Info main - recording demo "./demo.ddm"
+2009-08-19 00:55:42,968:  Info util.GameState.GameStateManager - gamestate manager initialized
+2009-08-19 00:55:42,968:  Info util.GameState.GameStateManager - changing gamestate to `defend.game.Game.Game'
+2009-08-19 00:55:42,968:  Info main - creating renderer
+2009-08-19 00:55:43,640:  Info rend.opengl.Renderer.OGLRenderer - multitexturing: true
+2009-08-19 00:55:43,640:  Info rend.opengl.Renderer.OGLRenderer - shaders: true
+2009-08-19 00:55:43,640:  Info rend.opengl.Renderer.OGLRenderer - framebuffers: true
+2009-08-19 00:55:43,640:  Info rend.opengl.Renderer.OGLRenderer - vertexbuffers: true
+2009-08-19 00:55:43,640:  Info rend.opengl.Renderer.OGLRenderer - blendequation: true
+2009-08-19 00:55:43,640:  Info main - creating input manager
+2009-08-19 00:55:43,640:  Info main - creating sound system
+2009-08-19 00:55:43,734:  Info main - creating scene graph
+2009-08-19 00:55:43,734:  Info main - starting main loop
+2009-08-19 00:55:43,734:  Info util.GameState.GameStateManager - starting new gamestate
+2009-08-19 00:55:43,734: Trace game.Game.Game - manual memory 1572kb, gc 1920kb, overall 3492kb
+2009-08-19 00:55:43,734:  Info game.Game.Game - initializing communication
+2009-08-19 00:55:43,734:  Info game.Game.Game - creating server
+2009-08-19 00:55:43,734:  Info game.net.Server.ClientManager - client manager initialized
+2009-08-19 00:55:43,734:  Info game.net.Server.NetworkServer - creating server socket on port 30315
+2009-08-19 00:55:43,734:  Info game.net.Server.NetworkServer - server socket created
+2009-08-19 00:55:43,734:  Info game.net.Server.NetworkServer - starting background thread
+2009-08-19 00:55:43,734:  Info game.net.Server.NetworkServer - accepting c
+2009-08-19 00:55:43,734:  Info game.net.Server.NetworkServer - accepting clients
+2009-08-19 00:55:43,734:  Info game.Game.Game - creating client
+2009-08-19 00:55:43,734:  Info sim.Core.GameObjectManager - game object manager created
+2009-08-19 00:55:43,734:  Info demo.Recorder.DemoRecorder - recording demo to ./demo.ddm
+2009-08-19 00:55:43,734:  Info game.net.Client.NetworkClient - connecting to localhost:30315
+2009-08-19 00:55:43,750:  Info game.net.Client.NetworkClient - connection created
+2009-08-19 00:55:43,750:  Info game.net.Server.ClientManager - spawning client with id 0
+2009-08-19 00:55:43,750:  Info server.client.handler.0 - new client (127.0.0.1:1864)
+2009-08-19 00:55:43,765:  Info game.net.Server.NetworkServer - all clients have connected
+2009-08-19 00:55:43,765:  Info server.client.handler.0 - sending ping
+2009-08-19 00:55:43,765:  Info game.net.Server.NetworkServer - waiting for all clients to answer the first ping
+2009-08-19 00:55:43,765:  Info server.client.handler.0 - sending my id to the client
+2009-08-19 00:55:43,765:  Info server.client.handler.0 - requesting version information
+2009-08-19 00:55:43,765:  Info server.client.handler.0 - requesting info
+2009-08-19 00:55:43,781: Trace scene.effect.Library.EffectLibrary - best effect implementing fog of war is shader
+2009-08-19 00:55:43,781: Trace scene.effect.Library.EffectLibrary - best effect implementing game object is shader
+2009-08-19 00:55:43,781:  Info scene.effect.Library.EffectLibrary - no supported effect implements game object custom
+2009-08-19 00:55:43,781: Trace scene.effect.Library.EffectLibrary - best effect implementing terrain is shader
+2009-08-19 00:55:43,890:  Info rend.Renderer.Texture - loading "data/textures/blood.png"
+2009-08-19 00:55:43,921:  Info scene.Graph.Graph - adding camera main
+2009-08-19 00:55:43,921:  Info game.net.Client.NetworkClient - ready
+2009-08-19 00:55:43,921:  Info game.Game.Game - waiting for communication process to finish
+2009-08-19 00:55:43,921:  Info server.client.handler.0 - ready
+2009-08-19 00:55:43,921:  Info game.net.Client.NetworkClient - my id is 0
+2009-08-19 00:55:43,921:  Info game.net.Client.NetworkClient - version information requested
+2009-08-19 00:55:43,921:  Info game.net.Server.NetworkServer - waiting for all clients to have sent their info
+2009-08-19 00:55:43,921:  Info game.net.Client.NetworkClient - version information sent
+2009-08-19 00:55:43,921:  Info server.client.handler.0 - client has version 0.0.0
+2009-08-19 00:55:43,921:  Info game.net.Client.NetworkClient - nickname requested
+2009-08-19 00:55:43,921:  Info game.net.Client.NetworkClient - nickname sent
+2009-08-19 00:55:43,921:  Info server.client.handler.0 - received info: id = 0; nick = desktop; team = 0; civ = test 1
+2009-08-19 00:55:43,921:  Info game.net.Server.NetworkServer - broadcasting game info
+2009-08-19 00:55:43,921:  Info game.net.Server.NetworkServer - waiting for all clients to be ready
+2009-08-19 00:55:43,921:  Info game.net.Server.NetworkServer - everybody is ready
+2009-08-19 00:55:43,921: Trace sim.Sim.Simulation - got game info
+2009-08-19 00:55:43,921:  Info game.net.Server.NetworkServer - starting game now
+2009-08-19 00:55:43,921:  Info sim.Sim.Simulation - no savegame; forwarding game info
+2009-08-19 00:55:43,921:  Info sim.Player.PlayerManager - player: id = 0; nick = desktop; team = 0; civ = test 1
+2009-08-19 00:55:43,921: Trace sim.Core.GameObjectManager - got game info
+2009-08-19 00:55:43,921:  Info sim.Core.TypeRegister - loading civ neutral for -1
+2009-08-19 00:55:43,921:  Info sim.Core.TypeRegister - initializing civ neutral
+2009-08-19 00:55:43,937:  Info model.Model.Model - loading "data/models/tree/untitled.obj"
+2009-08-19 00:55:43,937:  Info rend.Renderer.Texture - loading "data/models/tree//leaf.png"
+2009-08-19 00:55:43,968:  Info rend.Renderer.Texture - loading "data/models/tree//bark.png"
+2009-08-19 00:55:44,015:  Info sim.Core.GameObjectManager - loaded civ for neutral player
+2009-08-19 00:55:44,015:  Info sim.Core.TypeRegister - loading civ test 1 for 0
+2009-08-19 00:55:44,015:  Info sim.Core.TypeRegister - initializing civ test 1
+2009-08-19 00:55:44,015:  Info model.Model.Model - loading "data/models/house/model.obj"
+2009-08-19 00:55:44,015:  Info rend.Renderer.Texture - loading "data/models/house//model2.png"
+2009-08-19 00:55:44,171:  Info model.Model.Model - loading "data/models/sheep/low.obj"
+2009-08-19 00:55:44,187:  Info rend.Renderer.Texture - loading "data/models/sheep//SHECPO2.JPG"
+2009-08-19 00:55:44,203:  Info rend.Renderer.Texture - loading "data/models/sheep//SHEPATAB.PNG"
+2009-08-19 00:55:44,218:  Info rend.Renderer.Texture - loading "data/models/sheep//SHEPATAA.PNG"
+2009-08-19 00:55:44,218:  Info rend.Renderer.Texture - loading "data/models/sheep//SHECARA.JPG"
+2009-08-19 00:55:44,218:  Info rend.Renderer.Texture - loading "data/models/sheep//SHECPO.JPG"
+2009-08-19 00:55:44,234:  Info model.Model.Model - loading "data/models/sydney/sydney.md2.cfg"
+2009-08-19 00:55:44,281:  Info rend.Renderer.Texture - loading "data/models/sydney//sydney.bmp"
+2009-08-19 00:55:44,312:  Info sim.Core.GameObjectManager - loaded civ 'test 1' for player 'desktop'
+2009-08-19 00:55:44,328:  Info sim.Sim.Simulation - generating map (size=128*128, seed=1337)
+2009-08-19 00:55:44,375:  Info sim.Map.Map - calculating tile costs
+2009-08-19 00:55:44,390:  Info game.Game.Game - creating terrain
+2009-08-19 00:55:44,390:  Info terrain.Terrain.Terrain - loading diffuse maps
+2009-08-19 00:55:44,390:  Info rend.Renderer.Texture - loading "data/textures/grass.png"
+2009-08-19 00:55:44,437:  Info rend.Renderer.Texture - loading "data/textures/mountain.png"
+2009-08-19 00:55:44,468:  Info rend.Renderer.Texture - loading "data/textures/snow.png"
+2009-08-19 00:55:44,500:  Info terrain.Terrain.Terrain - creating patches
+2009-08-19 00:55:44,515:  Info terrain.Terrain.Terrain - creating lightmap
+2009-08-19 00:55:44,687: Trace util.Profiler.Benchmark - lightmap: 0.16s (161.09ms)
+2009-08-19 00:55:44,687:  Info terrain.Terrain.Terrain - creating cull tree
+2009-08-19 00:55:44,703:  Info rend.Renderer.Shader - loading "data/shaders/terrain.cfg"
+2009-08-19 00:55:44,796:  Info terrain.Terrain.Terrain - initialized
+2009-08-19 00:55:44,796:  Info sim.Sim.Simulation - setting terrain
+2009-08-19 00:55:44,796:  Info rend.Renderer.Shader - loading "data/shaders/model.cfg"
+2009-08-19 00:55:44,828:  Info rend.Renderer.Shader - loading "data/shaders/model-neutral.cfg"
+2009-08-19 00:55:44,859:  Info game.Game.Game - communication process finished
+2009-08-19 00:55:44,875:  Info model.Model.Model - loading "data/models/box/box.obj"
+2009-08-19 00:55:45,109: Trace game.Game.Game - manual memory 2769kb, gc 7936kb, overall 10705kb
+2009-08-19 00:55:45,125:  Info util.GameState.GameStateManager - gamestate initialized
+2009-08-19 00:55:45,140:  Info sim.Runner.SimulationRunner - number of simulation steps changed from 0 to 1
+2009-08-19 00:55:50,625:  Info game.Game.Game - game shutting down
+2009-08-19 00:55:50,625: Trace game.Game.Game - manual memory 2773kb, gc 8128kb, overall 10901kb
+2009-08-19 00:55:50,625:  Info game.Game.Game - shutting down server
+2009-08-19 00:55:50,625:  Info game.net.Server.NetworkServer - shutting down
+2009-08-19 00:55:50,625:  Info server.client.handler.0 - shutting down
+2009-08-19 00:55:50,625: Trace server.client.handler.0 - stopping threads
+2009-08-19 00:55:50,625: Trace server.client.handler.0 - closing socket
+2009-08-19 00:55:50,625: Trace server.client.handler.0 - read thread finished
+2009-08-19 00:55:50,625: Trace net.tcp.Socket.NetworkMessage - allocs: 85; peek usage: 2; non pool allocs: 0; non pool peek usage: 0
+2009-08-19 00:55:50,625:  Info game.net.Server.NetworkServer - shutting down was successful
+2009-08-19 00:55:50,625:  Info game.Game.Game - disconnecting gateway
+2009-08-19 00:55:50,625:  Info game.net.Client.NetworkClient - shutting down
+2009-08-19 00:55:50,625: Trace game.net.Client.NetworkClient - stopping threads
+2009-08-19 00:55:50,625: Trace game.net.Client.NetworkClient - read thread fi
+2009-08-19 00:55:50,625: Trace game.net.Client.NetworkClient - read thread finished
+2009-08-19 00:55:50,625: Trace net.tcp.Socket.NetworkMessage - allocs: 165; peek usage: 6; non pool allocs: 0; non pool peek usage: 0
+2009-08-19 00:55:50,625:  Info rend.Renderer.Texture - releasing "Texture"
+2009-08-19 00:55:50,625:  Info rend.Renderer.Texture - releasing "Texture"
+2009-08-19 00:55:50,625:  Info model.Model.Model - releasing "data/models/house/model.obj"
+2009-08-19 00:55:50,625:  Info rend.Renderer.Texture - releasing "data/models/house//model2.png"
+2009-08-19 00:55:50,625:  Info model.Model.Model - releasing "data/models/sheep/low.obj"
+2009-08-19 00:55:50,625:  Info rend.Renderer.Texture - releasing "data/models/sheep//SHECPO2.JPG"
+2009-08-19 00:55:50,625:  Info rend.Renderer.Texture - releasing "data/models/sheep//SHEPATAB.PNG"
+2009-08-19 00:55:50,625:  Info rend.Renderer.Texture - releasing "data/models/sheep//SHEPATAA.PNG"
+2009-08-19 00:55:50,625:  Info rend.Renderer.Texture - releasing "data/models/sheep//SHECARA.JPG"
+2009-08-19 00:55:50,625:  Info rend.Renderer.Texture - releasing "data/models/sheep//SHECPO.JPG"
+2009-08-19 00:55:50,625:  Info model.Model.Model - releasing "data/models/sydney/sydney.md2.cfg"
+2009-08-19 00:55:50,625:  Info rend.Renderer.Texture - releasing "data/models/sydney//sydney.bmp"
+2009-08-19 00:55:50,625:  Info model.Model.Model - releasing "data/models/tree/untitled.obj"
+2009-08-19 00:55:50,640:  Info rend.Renderer.Texture - releasing "data/models/tree//bark.png"
+2009-08-19 00:55:50,640:  Info rend.Renderer.Texture - releasing "data/models/tree//leaf.png"
+2009-08-19 00:55:50,640: Trace sim.Round.OrderData - allocs: 1; peek usage: 1; non pool allocs: 0; non pool peek usage: 0
+2009-08-19 00:55:50,640:  Info rend.Renderer.Shader - releasing "data/shaders/model.cfg"
+2009-08-19 00:55:50,640:  Info rend.Renderer.Shader - releasing "data/shaders/model-neutral.cfg"
+2009-08-19 00:55:50,640:  Info rend.Renderer.Shader - releasing "data/shaders/terrain.cfg"
+2009-08-19 00:55:50,640:  Info scene.Graph.Graph - full reset
+2009-08-19 00:55:50,640:  Info scene.Graph.Graph - deleting camera main
+2009-08-19 00:55:50,640:  Info scene.Graph.Graph - deleting nodes
+2009-08-19 00:55:50,640:  Info model.Model.Model - releasing "data/models/box/box.obj"
+2009-08-19 00:55:50,640:  Info rend.Renderer.Texture - releasing "data/textures/grass.png"
+2009-08-19 00:55:50,640:  Info rend.Renderer.Texture - releasing "data/textures/mountain.png"
+2009-08-19 00:55:50,640:  Info rend.Renderer.Texture - releasing "data/textures/snow.png"
+2009-08-19 00:55:50,640:  Info rend.Renderer.Texture - releasing "data/textures/blood.png"
+2009-08-19 00:55:50,640: Trace scene.nodes.ParticleSystem.IntrusiveListManager!(MParticleBase).IntrusiveListManager.ParticleT - allocs: 0; peek usage: 0; non pool allocs: 0; non pool peek usage: 0
+2009-08-19 00:55:50,640: Trace scene.nodes.ParticleSystem.IntrusiveListManager!(MSparkParticle).IntrusiveListManager.ParticleT - allocs: 0; peek usage: 0; non pool allocs: 0; non pool peek usage: 0
+2009-08-19 00:55:50,640: Trace sim.Map.Node - allocs: 17; peek usage: 11; non pool allocs: 0; non pool peek usage: 0
+2009-08-19 00:55:50,640: Trace game.Game.Game - manual memory 1572kb, gc 8128kb, overall 9700kb
+2009-08-19 00:55:50,640:  Info util.GameState.GameStateManager - gamestate `defend.game.Game.Game' is clean
+2009-08-19 00:55:50,671: Trace sound.openal.Source.OALSource - allocs: 0; peek usage: 0; non pool allocs: 0; non pool peek usage: 0
+2009-08-19 00:55:50,671:  Info main - program execution finished normally
+2009-08-19 00:55:51,031: Trace game.net.Client.NetworkClient - write thread finished
+2009-08-19 00:55:51,125: Trace server.client.handler.0 - write thread finished

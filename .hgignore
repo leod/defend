@@ -1,0 +1,24 @@
+syntax: glob
+dsss.last
+dsss_objs
+*.o
+*.exe
+*.dll
+*.obj
+*.lst
+*.map
+*.zip
+*.swp
+*.def
+*.ksp
+*.rsp
+*.log
+*.orig
+*.layout
+.deps
+.deps.bak
+*.7z
+*.prefs
+.classpath
+.project
+*.sav

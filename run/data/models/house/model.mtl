@@ -1,0 +1,11 @@
+# File created by luuv TSX
+# Created on: Wed Jun 20 13:40:08 2007 -1
+
+newmtl NoName
+Ns 0
+Ka 0.350000 0.350000 0.350000
+Kd 1.000000 0.200000 0.074510
+Ks 0.100000 0.100000 0.100000
+d 0.996078
+map_Kd model2.png
+# End

@@ -1,0 +1,24 @@
+# Blender3D MTL File: <memory>
+# Material Count: 2
+newmtl 09_-_Default_LEAF.PNG
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd leaf.png
+
+
+newmtl 01_-_Default_BARK.PNG
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd bark.png
+
+

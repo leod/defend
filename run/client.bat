@@ -1,0 +1,2 @@
+defend --host=localhost
+pause
